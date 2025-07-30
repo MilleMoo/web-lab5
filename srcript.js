@@ -269,7 +269,7 @@
     if (outOfStockItems.length > 0) {
         systemLogHTML += `
             <div class="text-blcack border-start p-2 border-warning border-3 text-warning-emphasis" id="Slog">
-                ⚠️สินค้า "${outOfStockItems.map(name => `- ${name}`).join("<br>")}" ไม่พร้อมจำหน่าย (อาจจะหมดสต็อก)
+                ⚠️สินค้า "${outOfStockItems.map(name => ` ${name}`).join("<br>")}" ไม่พร้อมจำหน่าย (อาจจะหมดสต็อก)
             </div>
         `;
     } else {
