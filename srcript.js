@@ -240,7 +240,6 @@
 
 
     purchaseHTML += `
-    </ul>
     <div class="row">
         <div class="col border m-3 p-2 rounded-2 align-content-center" id="boxTotal">
             <p class="text-center fw-semibold text-primary-emphasis">ยอดรวมสุทธิ</p>
