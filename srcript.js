@@ -198,7 +198,7 @@
 
     let availableItems = [];
     user.shoppingCart.forEach(cartItem => {
-        const product = products.find(p => p.id === cartItem.productId);
+        const product = products.find((p) => p.id === cartItem.productId);
         if (product) {
             if (product.stock >= cartItem.quantity) {
                 availableItems.push({
@@ -221,7 +221,7 @@
             <li class="border rounded-2 d-flex justify-content-between m-1 p-2" id="listItem">
                 <div>
                     <span class="fw-semibold">${item.name}</span><br>
-                    <p class="text-secondary">${item.price} X ${item.quantity}</p>
+                    <p class="text-secondary">${item.price.toLocaleString()} X ${item.quantity}</p>
                 </div>
                 <span class="fw-semibold align-content-center">${item.total.toLocaleString()} บาท</span>
             </li>
