@@ -233,7 +233,7 @@
         return product && product.price > 1000;
     });
 
-    const hasOutOfStock = user.shoppingCart.some(cartItem => {
+    const HasBookStock = user.shoppingCart.some(cartItem => {
         const product = products.find(p => p.id === cartItem.productId);
         return product && product.name.includes("หนังสือ");
     });
@@ -256,8 +256,8 @@
             </p>
             <p>
                 มีสินค้าหมวดหนังสือหรือไม่:
-                <span class="${hasOutOfStock ? 'text-success fw-bold' : 'text-danger fw-bold'}">
-                    ${hasOutOfStock ? 'ใช่' : 'ไม่ใช่'}
+                <span class="${HasBookStock ? 'text-success fw-bold' : 'text-danger fw-bold'}">
+                    ${HasBookStock ? 'ใช่' : 'ไม่ใช่'}
                 </span>
             </p>
         </div>
