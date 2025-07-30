@@ -218,9 +218,9 @@
     availableItems.forEach(item => {
         total += item.total;
         purchaseHTML += `
-            <li class="border rounded-2 d-flex justify-content-between m-1 p-2" id="listItem">
-                <div>
-                    <span class="fw-semibold">${item.name}</span><br>
+            <li class="border rounded-2 d-flex justify-content-between mb-1 p-2" id="listItem">
+                <div class="pt-4">
+                    <span class="fw-semibold ">${item.name}</span><br>
                     <p class="text-secondary">${item.price.toLocaleString()} X ${item.quantity}</p>
                 </div>
                 <span class="fw-semibold align-content-center">${item.total.toLocaleString()} บาท</span>
