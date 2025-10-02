@@ -1,0 +1,144 @@
+/* --- General Body Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 10px;
+}
+
+.add-user-btn {
+    background-color: #42b72a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.add-user-btn:hover {
+    background-color: #36a420;
+}
+
+.user-avatar {
+    cursor: pointer; /* ทำให้ผู้ใช้รู้ว่าคลิกได้ */
+}
+
+/* --- Main Heading --- */
+h1 {
+    text-align: center;
+    color: #1c1e21;
+    margin-bottom: 40px;
+}
+
+/* --- User Container --- */
+/* This uses CSS Grid to create a responsive layout */
+.user-container {
+    display: grid;
+    /* Create columns that are at least 280px wide, and fit as many as possible */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container on the page */
+    padding: 0 10px;
+}
+
+/* --- Individual User Card --- */
+.user-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures content respects the border radius */
+}
+
+/* --- Hover Effect for the Card --- */
+.user-card:hover {
+    transform: translateY(-5px); /* Lift the card up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- User Avatar Image --- */
+.user-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Prevents the image from being stretched */
+    border: 4px solid #e7e7e7;
+    margin-bottom: 16px;
+}
+
+/* --- Username --- */
+.user-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem; /* 24px */
+    color: #1c1e21;
+}
+
+/* --- User Email --- */
+.user-card p {
+    margin: 0;
+    font-size: 1rem; /* 16px */
+    color: #606770;
+}
+
+/* --- Loading/Error Message Styling --- */
+#user-container p {
+    font-size: 1.2rem;
+    color: #606770;
+    text-align: center;
+    grid-column: 1 / -1; /* Make this message span all columns if grid is active */
+}
+
+.card-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.card-actions button:hover {
+    transform: scale(1.05);
+}
+
+.edit-btn {
+    background-color: #ffc107; /* สีเหลือง */
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* สีแดง */
+    color: white;
+}
+
+/* เพิ่มโค้ดนี้ใน style.css */
+.user-avatar {
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.user-avatar:hover {
+    filter: brightness(0.9);
+}
