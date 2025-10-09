@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5a623;
+    --background-color: #f4f7f6;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --light-gray: #e0e0e0;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.5rem; 
+    text-align: center;
+}
+
+.form-container {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.book-list-container {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+#book-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#book-table th, #book-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+#book-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+#book-table tbody tr:hover {
+    background-color: var(--background-color);
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#submit-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#submit-button:hover {
+    background-color: #357ABD;
+}
+
+#cancel-button {
+    background-color: #ccc;
+    color: var(--text-color);
+}
+
+#cancel-button:hover {
+    background-color: #bbb;
+}
+
+.btn-edit {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.btn-edit:hover {
+    background-color: #d48c12;
+}
+
+
+.btn-delete {
+    background-color: var(--danger-color);
+    color: white;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.hidden {
+    display: none;
+}
